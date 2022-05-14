@@ -1,0 +1,40 @@
+.restoran-container {
+  width: 100%;
+}
+
+.restoran-container span {
+  color: #5d3ec2;
+}
+
+.restoran-container--radios {
+  min-width: 2rem;
+  min-height: 2rem;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.restoran-container--radios figure {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: rgb(111, 111, 111);
+  cursor: pointer;
+  transition: fill ease 0.2s;
+}
+
+.restoran-container figure:first-child {
+  fill: #5d3ebc;
+}
+
+.restoran-container--radios figure:hover {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: #7849f7;
+  cursor: pointer;
+}
+
+.restoran-container--radios figure:active {
+  fill: #5d3ebc;
+}

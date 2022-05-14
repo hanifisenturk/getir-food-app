@@ -1,0 +1,12 @@
+.amount-filter--container {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  padding: 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-bottom: 1px solid #f3f0fe;
+}
+
+.amount-filter--container p {
+  font-weight: 400;
+}

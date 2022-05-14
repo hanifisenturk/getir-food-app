@@ -1,0 +1,19 @@
+.promotion-badge {
+  display: inline-block;
+  text-align: center;
+  max-width: 100%;
+  padding: 2px 1.2rem 2px 8px;
+  border-radius: 3px;
+  box-shadow: rgb(93 62 188 / 16%) 0px 1px 3px;
+  clip-path: polygon(0% 0%, 100% 0px, 96% 50%, 100% 100%, 0% 100%);
+  background-color: rgb(255, 209, 13);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.promotion-badge img {
+  width: 1rem;
+  height: auto;
+  margin-right: 8px;
+}

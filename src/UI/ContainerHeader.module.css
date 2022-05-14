@@ -1,0 +1,17 @@
+.container-header {
+  margin-bottom: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgb(25, 25, 25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container-header h5 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}

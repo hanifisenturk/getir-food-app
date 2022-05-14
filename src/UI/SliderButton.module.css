@@ -1,0 +1,23 @@
+.slider-button:first-child {
+  border-right: 1px solid rgb(231, 231, 231);
+  cursor: not-allowed;
+}
+
+.slider-button:first-child svg {
+  fill: rgb(231, 231, 231);
+}
+
+.slider-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  cursor: pointer;
+}
+
+.slider-button svg {
+  width: 8px;
+  height: 8px;
+  fill: rgb(93, 62, 188);
+}

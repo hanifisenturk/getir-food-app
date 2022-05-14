@@ -1,0 +1,14 @@
+.accordion-details {
+  font-size: 1.2rem;
+  color: rgb(105, 116, 136);
+  font-weight: normal;
+  height: 0;
+  transition: all 0.15s ease-in-out;
+  opacity: 0;
+}
+
+.accordion-details--animate {
+  margin-top: 1.6rem;
+  height: 100%;
+  opacity: 1;
+}

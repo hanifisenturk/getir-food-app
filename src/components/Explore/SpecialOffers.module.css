@@ -1,0 +1,73 @@
+.special-offers--header {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.special-offers--actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  gap: 1.6rem;
+}
+
+.special-offers--all {
+  color: rgb(93, 56, 192);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.special-offers--slider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid rgb(231, 231, 231);
+  user-select: none;
+}
+
+.special-offers--slider_button:first-child {
+  border-right: 1px solid rgb(231, 231, 231);
+  cursor: not-allowed;
+}
+
+.special-offers--slider_button:first-child svg {
+  fill: rgb(231, 231, 231);
+}
+
+.special-offers--slider_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  cursor: pointer;
+}
+
+.special-offers--slider_button svg {
+  width: 8px;
+  height: 8px;
+  fill: rgb(93, 62, 188);
+}
+
+.special-offers--header h5 {
+  font-size: 1.4rem;
+  color: rgb(25, 25, 25);
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+.special-offers--container {
+  width: 100%;
+  box-shadow: 0px 6px 24px rgb(93 62 188 / 4%);
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2.4rem;
+}

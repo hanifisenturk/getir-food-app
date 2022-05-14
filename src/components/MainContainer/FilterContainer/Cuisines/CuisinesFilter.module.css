@@ -1,0 +1,52 @@
+.cuisine-filter--container {
+  width: 100%;
+  padding: 2.4rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-bottom: 1px solid #f3f0fe;
+  position: relative;
+}
+
+.cuisine-filter--container::after {
+  content: "";
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background: linear-gradient(to top, white, transparent);
+}
+
+.cuisine-filter--search {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(223, 222, 226);
+  outline: none;
+  padding: 1.2rem 1.4rem;
+  caret-color: rgb(120, 73, 247);
+  line-height: 2.4rem;
+  border-radius: 4px;
+  color: rgb(25, 25, 25);
+  font-size: 1.4rem;
+  font-weight: 400;
+  transition: border-color ease-in 0.1s;
+  margin-bottom: 1.2rem;
+}
+
+.cuisine-filter--search:hover,
+.cuisine-filter--search:focus {
+  border-color: rgb(120, 73, 247);
+}
+
+.cuisine-filter--search::placeholder {
+  font-size: 1.4rem;
+  color: rgb(105, 116, 136);
+}
+
+.radio-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #697488;
+  margin: 1.4rem 0;
+}

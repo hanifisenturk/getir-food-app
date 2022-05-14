@@ -1,0 +1,133 @@
+.restoran-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.25fr 2fr;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1.6rem;
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0px 6px 24px rgb(93 62 188 / 4%);
+  border-radius: 4px;
+}
+
+.restoran-info--container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-start;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+.restoran-info--header_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.restoran-info--header {
+  color: rgb(93, 62, 188);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.restoran-info--header h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.offer-info--point {
+  padding: 3px;
+  background-color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 4px;
+  align-self: flex-end;
+  margin-bottom: 3px;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 25%);
+}
+
+.offer-info--point svg {
+  width: 9px;
+  height: 9px;
+  fill: rgb(93 62 188);
+  margin-right: 3px;
+}
+
+.offer-info--quantity {
+  font-family: "Open Sans", sans-serif;
+  margin-left: 4px;
+  color: gray;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.offer-info-discount {
+  display: inline-block;
+  text-align: center;
+  max-width: 100%;
+  padding: 2px 1.2rem 2px 8px;
+  border-radius: 3px;
+  box-shadow: rgb(93 62 188 / 16%) 0px 1px 3px;
+  clip-path: polygon(0% 0%, 100% 0px, 96% 50%, 100% 100%, 0% 100%);
+  font-size: 1.1rem;
+  background-color: rgb(255, 209, 13);
+  color: rgb(93, 62, 188);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.offer-info--expected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  align-self: flex-start;
+}
+
+.restorant-badge {
+  text-align: center;
+  background-color: green;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 1px 4px;
+}
+
+.expected-datas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(111, 111, 111);
+  font-size: 1.1rem;
+}
+
+.expected-datas p:first-child {
+  font-weight: 600;
+}
+
+.expected-datas p:nth-child(2) {
+  font-weight: 400;
+}
+
+/* Mudavim's logo  */
+
+.mudavim-logo {
+  width: 1rem;
+  height: auto;
+  margin-right: 8px;
+}

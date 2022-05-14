@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "ArlonSemibold";
+  src: local("GoldmanBold"), url("./fonts/ArlonSemibold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "ArlonSemiBold";
+  background-color: #fafafa;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.slide-button {
+  fill: #5d3ebc;
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+}
+
+.slide-button--left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+.slide-button--right {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}

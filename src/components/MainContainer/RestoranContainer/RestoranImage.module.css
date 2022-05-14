@@ -1,0 +1,109 @@
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.justify-end {
+  justify-self: end;
+}
+
+.offer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 9.8rem;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(93 62 188);
+  cursor: pointer;
+}
+
+.offer-container h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.restorant-badge {
+  text-align: center;
+  background-color: green;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 1px 4px;
+}
+
+.offer-photo--container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.offer-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.offer-infos {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.offer-info-discount {
+  text-align: center;
+  max-width: 100%;
+  padding: 2px 1.2rem 2px 8px;
+  border-radius: 3px;
+  box-shadow: rgb(93 62 188 / 16%) 0px 1px 3px;
+  clip-path: polygon(0% 0%, 100% 0px, 96% 50%, 100% 100%, 0% 100%);
+  font-size: 1rem;
+  background-color: rgb(255, 209, 13);
+  font-weight: 600;
+}
+
+.offer-info-fav {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.offer-info-fav svg {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+  cursor: pointer;
+  margin-right: 8px;
+  justify-self: flex-end;
+}
+
+.offer-info-point {
+  padding: 1px 5px;
+  background-color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  align-self: flex-end;
+  margin-bottom: 3px;
+}
+
+.offer-info-point svg {
+  width: 9px;
+  height: 9px;
+  fill: rgb(93 62 188);
+  margin-right: 3px;
+}

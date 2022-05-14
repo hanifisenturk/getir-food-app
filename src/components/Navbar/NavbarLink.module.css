@@ -1,0 +1,23 @@
+.hover-container {
+  margin-top: 5px;
+  border-radius: 6px 6px 0 0;
+}
+
+.hover-container:hover {
+  background-color: #5d3ebc;
+}
+
+.nav-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(219, 219, 255);
+  padding: 1.2rem 2rem;
+  height: 100%;
+  filter: brightness(5%) invert(90%) sepia(72%) saturate(3333%)
+    hue-rotate(180deg) contrast(102%);
+}
+
+.nav-link img {
+  height: 1.6rem;
+}

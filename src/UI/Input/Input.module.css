@@ -1,0 +1,25 @@
+.filter-input {
+  width: 100%;
+  color: rgb(25, 25, 25);
+  line-height: 2.4rem;
+  caret-color: rgb(120, 73, 247);
+  padding: 0 1.4rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(223, 222, 226);
+  height: 4.4rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  transition: all 0.2s ease 0s;
+  color: rgb(25, 25, 25);
+}
+
+.filter-input::placeholder {
+  color: rgb(105, 116, 136);
+}
+
+.filter-input:hover,
+.filter-input:focus {
+  border-color: rgb(120, 73, 247);
+}

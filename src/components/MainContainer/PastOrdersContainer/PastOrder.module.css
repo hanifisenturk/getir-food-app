@@ -1,0 +1,42 @@
+.past-order--container {
+  width: 100%;
+  padding: 1.6rem 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.past-order--container:not(:last-child) {
+  border-bottom: 1px solid #f3f0fe;
+}
+
+.past-order--restaurant {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.past-order--details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #697488;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.past-order--actions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  color: rgb(93, 62, 188);
+  font-weight: 600;
+  font-size: 1.4rem;
+}

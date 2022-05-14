@@ -1,0 +1,9 @@
+.accordion-container {
+  width: 300px;
+  background-color: #fff;
+  padding: 2.4rem;
+  box-shadow: rgb(93 62 188 / 4%) 0px 6px 24px;
+  overflow: hidden;
+  padding: 2.4rem;
+  border-bottom: 1px solid #f3f0fe;
+}

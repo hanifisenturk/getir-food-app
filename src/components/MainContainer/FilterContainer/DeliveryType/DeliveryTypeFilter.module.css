@@ -1,0 +1,8 @@
+.delivery-filter--container {
+  width: 100%;
+  padding: 2.4rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-bottom: 1px solid #f3f0fe;
+}

@@ -1,0 +1,76 @@
+.cuisines-section--container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.cuisines-section--header {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cuisines-section--actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  gap: 1.6rem;
+}
+
+.cuisines-section--all {
+  color: rgb(93, 56, 192);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.cuisines-section--slider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid rgb(231, 231, 231);
+  user-select: none;
+}
+
+.cuisines-section--slider_button:first-child {
+  border-right: 1px solid rgb(231, 231, 231);
+  cursor: not-allowed;
+}
+
+.cuisines-section--slider_button:first-child svg {
+  fill: rgb(231, 231, 231);
+}
+
+.cuisines-section--slider_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  cursor: pointer;
+}
+
+.cuisines-section--slider_button svg {
+  width: 8px;
+  height: 8px;
+  fill: rgb(93, 62, 188);
+}
+
+.cuisines-section--header h5 {
+  font-size: 1.4rem;
+  color: rgb(25, 25, 25);
+  font-family: "Open Sans";
+  font-weight: 600;
+}

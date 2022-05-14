@@ -1,0 +1,36 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  height: 4.5rem;
+  background-color: #4c3398;
+  overflow: hidden;
+  padding: 0 3.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 1232px;
+  width: 100%;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+
+.settings-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}

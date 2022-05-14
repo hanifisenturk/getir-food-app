@@ -1,0 +1,11 @@
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-container--filters {
+  background-color: #fff;
+  width: 300px;
+  border-radius: 8px;
+}

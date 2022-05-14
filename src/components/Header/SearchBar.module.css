@@ -1,0 +1,133 @@
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-container {
+  height: 100%;
+  width: 50.8rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+.form-container input {
+  width: 100%;
+  height: 100%;
+  padding: 0 4.8rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1.45rem;
+  font-family: inherit;
+  letter-spacing: -0.3px;
+  caret-color: rgb(120, 73, 247);
+}
+
+.search-icon--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  left: 2rem;
+}
+
+.search-icon {
+  width: 1.4rem;
+  fill: #5d3ebc;
+  pointer-events: none;
+}
+
+.address-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: #ffd300;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.address-selector {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-selector button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+  font-family: inherit;
+  color: rgb(82, 82, 82);
+  cursor: pointer;
+  padding: 8px;
+  background-color: white;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.house-icon--container {
+  width: 2.4rem;
+  height: 2.4rem;
+  padding-right: 6px;
+  margin-left: 8px;
+}
+
+.house-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.address-selector button p {
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.arrow-container {
+  min-width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-arrow-icon {
+  height: 1.2rem;
+  fill: #5d3ebc;
+}
+
+.expected-arriving-time {
+  height: 100%;
+  background-color: #ffd300;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #5d3ebc;
+  padding: 0 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.expected-arriving-time span {
+  margin-right: 4px;
+}
