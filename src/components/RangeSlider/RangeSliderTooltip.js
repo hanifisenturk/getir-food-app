@@ -1,14 +1,12 @@
 import classes from "./RangeSliderTooltip.module.css";
-import { useEffect, useState, useRef } from "react";
 
 const RangeSliderTooltip = ({ amount, transformDistance }) => {
-  console.log(transformDistance);
-  const [distance, SetDistance] = useState(transformDistance);
-
+  
+  let newPosition = +(9 - transformDistance * 0.18);
   return (
     <div
       style={{
-        left: transformDistance,
+        left: `calc(${transformDistance}% + ${newPosition}px - 18px )`,
       }}
       className={classes["tooltip-container"]}
     >
