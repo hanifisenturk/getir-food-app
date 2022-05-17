@@ -1,6 +1,7 @@
 .tooltip-container {
   background-color: #5d3ebc;
-  width: 3rem;
+  width: 3.6rem;
+  padding: 3px;
   text-align: center;
   position: absolute;
   top: -4.5rem;
