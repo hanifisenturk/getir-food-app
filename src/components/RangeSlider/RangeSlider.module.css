@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 1.7rem 0 8px;
 }
 
 .range-slider {
