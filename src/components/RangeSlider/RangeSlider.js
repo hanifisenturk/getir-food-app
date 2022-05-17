@@ -5,19 +5,19 @@ import RangeSliderTooltip from "./RangeSliderTooltip";
 const RangeSlider = (props) => {
   const sliderConfigs = { minValue: 5, maxValue: 300, step: 5 };
   const [sliderValue, setSliderValue] = useState(sliderConfigs.maxValue);
-  const [transformDistance, setTransformDistance] = useState(161);
+  const [transformDistance, setTransformDistance] = useState(100);
 
   const handler = (e) => {
-    setSliderValue(e.target.value);
-    console.log(e.target.value);
-    let rangeSliderRatio = Number(
-      ((+e.target.value - sliderConfigs.minValue) * 100) /
+    let value = e.target.value;
+    setSliderValue(value);
+
+   
+    let distanceRatio = Number(
+      ((value - sliderConfigs.minValue) * 100) /
         (sliderConfigs.maxValue - sliderConfigs.minValue)
     );
-
-    setTransformDistance(
-      `calc(${rangeSliderRatio}% + (${30 - rangeSliderRatio * 0.15}px))`
-    );
+    
+    setTransformDistance(distanceRatio);
   };
 
   return (
