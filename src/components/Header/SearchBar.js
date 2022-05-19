@@ -1,10 +1,36 @@
+import { useState, useRef } from "react";
 import classes from "./SearchBar.module.css";
 import House from "../../assets/house.svg";
 const SearchBar = () => {
+  const [isTyping, setIsTyping] = useState(false);
+  const searchBarRef = useRef();
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+  };
+
+  const changeHandler = (e) => {
+    if (e.target.value === "") {
+      return setIsTyping(false);
+    }
+
+    setIsTyping(true);
+  };
+
+  const exitFromSearchBarHandler = () => {
+    searchBarRef.current.value = "";
+    setIsTyping(false);
+  };
+
   return (
-    <form className={classes.form}>
+    <form onSubmit={submitHandler} className={classes.form}>
       <div className={classes["form-container"]}>
-        <input type="text" required placeholder="Yemek veya restoran ara" />
+        <input
+          ref={searchBarRef}
+          onChange={changeHandler}
+          type="text"
+          placeholder="Yemek veya restoran ara"
+        />
         <div className={classes["search-icon--container"]}>
           <svg
             name="search"
@@ -20,35 +46,45 @@ const SearchBar = () => {
             ></path>
           </svg>
         </div>
-        <div className={classes["address-actions"]}>
-          <div className={classes["address-selector"]}>
-            <button>
-              <figure className={classes["house-icon--container"]}>
-                <img
-                  className={classes["house-icon"]}
-                  src={House}
-                  alt="Choose an address"
-                />
-              </figure>
-              <p>Ev</p>
-              <div className={classes["arrow-container"]}>
-                <svg
-                  color="#5d3ebc"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 14 14"
-                  className={classes["right-arrow-icon"]}
-                >
-                  <path d="M3.293 13.707a0.996 0.996 0 0 0 1.411 0l6.002 -6.002a0.996 0.996 0 0 0 0 -1.411L4.704 0.293c-0.39 -0.39 -1.02 -0.39 -1.411 0s-0.39 1.02 0 1.411l5.292 5.292L3.293 12.287a1.008 1.008 0 0 0 0 1.421z" />
-                </svg>
-              </div>
-            </button>
+        {!isTyping ? (
+          <div className={classes["address-actions"]}>
+            <div className={classes["address-selector"]}>
+              <button>
+                <figure className={classes["house-icon--container"]}>
+                  <img
+                    className={classes["house-icon"]}
+                    src={House}
+                    alt="Choose an address"
+                  />
+                </figure>
+                <p>Ev</p>
+                <div className={classes["arrow-container"]}>
+                  <svg
+                    color="#5d3ebc"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 14 14"
+                    className={classes["right-arrow-icon"]}
+                  >
+                    <path d="M3.293 13.707a0.996 0.996 0 0 0 1.411 0l6.002 -6.002a0.996 0.996 0 0 0 0 -1.411L4.704 0.293c-0.39 -0.39 -1.02 -0.39 -1.411 0s-0.39 1.02 0 1.411l5.292 5.292L3.293 12.287a1.008 1.008 0 0 0 0 1.421z" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div className={classes["expected-arriving-time"]}>
+              <span>TVS</span>
+              &nbsp;
+              <time>5-50dk</time>
+            </div>
           </div>
-          <div className={classes["expected-arriving-time"]}>
-            <span>TVS</span>
-            &nbsp;
-            <time>10-50dk</time>
-          </div>
-        </div>
+        ) : (
+          <svg
+            onClick={exitFromSearchBarHandler}
+            className={classes["exit-icon"]}
+            viewBox="0 0 32 32"
+          >
+            <path d="M31.331.669a2.279 2.279 0 0 0-3.226 0L16.001 12.773 3.897.669c-.892-.892-2.334-.892-3.226 0s-.892 2.334 0 3.226l12.104 12.104L.671 28.103c-.892.892-.892 2.334 0 3.227s2.334.892 3.226 0l12.104-12.105L28.105 31.33c.892.892 2.334.892 3.226 0s.892-2.334 0-3.227L19.227 15.999 31.331 3.895c.892-.869.892-2.334 0-3.226z" />
+          </svg>
+        )}
       </div>
     </form>
   );
