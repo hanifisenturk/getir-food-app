@@ -1,6 +1,10 @@
 .checkbox-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 1.2rem;
   font-family: "Open Sans", sans-serif;
@@ -10,6 +14,9 @@
   margin-bottom: 1.6rem;
   cursor: pointer;
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -19,15 +26,26 @@
   border: 2px solid rgb(223, 222, 226);
   border-radius: 5px;
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   background-color: #fff;
   margin: 0;
   padding: 0;
   cursor: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86) 0s;
+  -o-transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86) 0s;
   transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86) 0s;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -38,16 +56,26 @@
 
 .checkbox-container input[type="checkbox"]::before {
   content: "✔";
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 2rem;
   height: 2rem;
   background-color: #5d3ebc;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
   transform: scale(0);
   color: #fff;
 }
 
 .checkbox-container input[type="checkbox"]:checked::before {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
 }
